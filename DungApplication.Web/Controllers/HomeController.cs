@@ -10,6 +10,7 @@ namespace DungApplication.Web.Controllers
     {
         public ActionResult Index()
         {
+            var dung = "Ha Thanh Dung";
             return View();
         }
 
