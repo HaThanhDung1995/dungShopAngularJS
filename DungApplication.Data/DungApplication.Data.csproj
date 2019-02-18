@@ -48,6 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\Repository.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +65,10 @@
     <ProjectReference Include="..\DungApplication.Common\DungApplication.Common.csproj">
       <Project>{da501b13-7d76-40e8-9ada-68413187df88}</Project>
       <Name>DungApplication.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DungApplication.Model\DungApplication.Model.csproj">
+      <Project>{643606e2-dd68-44ba-b045-457ee7ec7078}</Project>
+      <Name>DungApplication.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
